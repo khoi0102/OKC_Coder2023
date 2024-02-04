@@ -1,0 +1,96 @@
+.header {
+    display: flex; 
+    align-items: center;
+}
+
+.wikipedia-logo {
+        align-items: center;
+
+    height: 70px; 
+}
+
+.search-bar {
+    align-items: center;
+    width: 400px;
+    height: 30px;
+}
+.search-button{
+    width: 60px;
+    height: 30px;
+
+}
+.title{    
+margin-left: 260px;  
+font-weight: 20;
+}
+
+
+.article{
+    margin-left:240px;
+    margin-right:10px;
+    text-align:center;
+}
+
+   
+.read{
+    margin-left: 800px;  
+    margin-right:10px;
+
+}
+.view-source{
+    margin-right:10px;
+
+}
+.drop-down{
+    margin-bottom:10px;
+}
+.view-history{
+    margin: right 15px;
+}
+
+.account{
+text-align: right;
+margin-bottom: 200;
+}
+.create-account
+{
+    margin-right:10px;
+}
+
+.create-account
+{
+    margin-left: 700px;
+}
+hr
+{
+    
+    width: 75%;
+}
+
+.main
+{
+    margin-left:240px;
+    line-height: 2;
+    margin-right:850px;
+    font-size: 14;
+}
+.information-box
+{
+    margin-left:1100px;
+    border: 1px solid black;
+    margin-top:-650px;
+    width: 350px;
+    padding-left: 15px;
+}
+.portrait{
+    align-items:center;
+
+}
+.authorname
+{
+    text-align: center;
+}
+.portrait
+{
+    text-align: center;
+}

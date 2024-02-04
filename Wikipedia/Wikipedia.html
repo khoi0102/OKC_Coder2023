@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="style.css" rel="stylesheet">
+    <title>
+        Wikipedia
+    </title>
+</head>
+<body>
+    <div class="header">
+    <a href="https://en.wikipedia.org/wiki/Main_Page"><img src="logo.png" alt="Logo" class="wikipedia-logo"></a>   
+    <form>
+    <input type="search" class="search-bar" placeholder="Search Wikipedia">
+    <input name="form" type="submit"class="search-button" value="Seach">
+    </form>
+    <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Tim+Berners-Lee" class="create-account">Create account</a>
+    <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Tim+Berners-Lee" class="log-in">Log in</a>
+    </div>     
+   
+
+    <div class="title">
+<h1>Tim Berners-Lee</h1>
+    </div>
+<hr>
+    <div class="content-link">
+        <a href="" class="article">Article</a>
+        <a href="https://en.wikipedia.org/wiki/Talk:Tim_Berners-Lee" class="talk">Talk</a>
+        <a href="https://en.wikipedia.org/wiki/Talk:Tim_Berners-Lee" class="read">Read</a>
+        <a href="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&action=edit" class="view-source">View Source</a>
+        <a href="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&action=history" class="view-history">View History</a>
+
+        <select id="tools" name="toollist">
+        <option value="tools">Tools</option>
+        <option value="general">General</option>
+       <option value="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Tim_Berners-Lee">What links here</option>
+        <option value="https://en.wikipedia.org/wiki/Special:RecentChangesLinked?hidebots=1&hidecategorization=1&hideWikibase=1&target=Tim_Berners-Lee&limit=50&days=7&urlversion=2">Related Change</option>
+        <option value="https://en.wikipedia.org/wiki/Special:SpecialPages">Special Pages</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&oldid=1199288165">Pernament link</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&action=info">Page Information</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Tim_Berners-Lee&id=1199288165&wpFormIdentifier=titleform">Cite this page</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTim_Berners-Lee">Get shortened URL</option>
+        <option value="https://www.wikidata.org/wiki/Q80">Wikidata Item</option>
+        <option value="https://www.wikidata.org/wiki/Q80#sitelinks-wikipedia">Edit interlanguage links</option>
+        <option value="https://en.wikipedia.org/wiki/Tim_Berners-Lee#">Expand all</option>
+        <option value="print">Print/export</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Tim_Berners-Lee&action=show-download-screen">Download as PDF</option>
+        <option value="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&printable=yes">Printable version</option>
+        <option value="other-project">In other projects</option>
+        <option value="https://commons.wikimedia.org/wiki/Tim_Berners-Lee">Wikimedia Commons</option>
+        <option value="https://en.wikiquote.org/wiki/Tim_Berners-Lee">Wikiquote</option>
+        <option value="https://en.wikisource.org/wiki/Author:Timothy_John_Berners-Lee">Wikisource</option>
+</select>
+        <button id="goButton">Visit</button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.getElementById('goButton').addEventListener('click', function() {
+                var selectElement = document.getElementById('tools');
+                var url = selectElement.value;
+            
+                if(url.startsWith('http')) { // Check if the value is a valid URL
+                  window.location.href = url;
+                } else {
+                  alert("Please select a valid option with a URL.");
+                }
+              });
+            });
+            </script>
+
+    </div>
+<hr>
+<div class="main">
+    <p>From Wikipedia, the free encyclopedia</p>
+<p>Sir Timothy John Berners-Lee OM KBE FRS FREng FRSA DFBCS RDI (born 8 June 1955),[1] also known as TimBL, is an English computer scientist best known as the inventor of the World Wide Web, the HTML markup language, the URL system, and HTTP. He is a professorial research fellow at the University of Oxford[2] and a professor emeritus at the Massachusetts Institute of Technology (MIT).[3][4]</p>
+<p>Berners-Lee proposed an information management system on 12 March 1989[5][6] and implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the Internet in mid-November.[7][8][9][10][11] He devised and implemented the first Web browser and Web server and helped foster the Web's subsequent explosive development. He is the founder and director of the World Wide Web Consortium (W3C), which oversees the continued development of the Web. He co-founded (with Rosemary Leith) the World Wide Web Foundation. In April 2009, he was elected as Foreign Associate of the National Academy of Sciences.[12][13]</p>
+<p>Berners-Lee is a senior researcher and holder of the 3Com founder's chair at the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL).[14] He is a director of the Web Science Research Initiative (WSRI)[15] and a member of the advisory board of the MIT Center for Collective Intelligence.[16][17] In 2011, he was named as a member of the board of trustees of the Ford Foundation.[18] He is a founder and president of the Open Data Institute and is currently an advisor at social network MeWe.[19] In 2004, Berners-Lee was knighted by Queen Elizabeth II for his pioneering work.[20][21] He received the 2016 Turing Award "for inventing the World Wide Web, the first web browser, and the fundamental protocols and algorithms allowing the Web to scale".[22] He was named in Time magazine's list of the 100 Most Important People of the 20th century and has received a number of other accolades for his invention.[23]</p>
+</div>
+
+<div class="information-box">
+
+    <p class="authorname">Sir</p>
+        <p class="authorname" ><b>Tim Berners-Lee</b></p>
+        <p class="authorname">OM KBE FRS FREng FRSA DFBCS RDI</p>
+    <figure class="portrait">
+    <img src="Sir.jpg">
+    <figcaption>Berners-Lee in 2014</figcaption>
+    </figure>
+    <p><b>Born:</b>	        Timothy John Berners-Lee8 June 1955 (age 68)London, England</p>
+    <p><b>Other names:</b>	TimBL TBL</p>
+<p><b>Education:</b> The Queen's College, Oxford (BA) </p>
+<p><b>Known for</b> Invention of the World Wide Web</p>
+<p><b>Spouses:</b> Nancy Carlson
+    ​(m. 1990; div. 2011)​
+     Rosemary Leith ​(m. 2014)</p>
+     <p><b>Children</b> 2 children; 3 step-children</p>
+</div>
+
+</body>
+
+</html>
