@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="signin.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/4f61d8f41c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class='list'>
+            <h2 href="coffeehouse.html">The</h2>   
+            <h1 href="coffeehouse.html">Culture Coffee</h1>
+            <a href="coffeehouse.html">Our Store</a>
+            <a href="menu.html">Order Now</a>
+            <a href="#">Career</a>
+            <!-- Replace <a> tag for login with a <button> or similar clickable element -->
+            <button id="loginButton">Login</button>
+            <div id="userAvatar" style="display: none;"></div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+        <div class="slogan">
+            <!-- The sign-in form can be hidden or removed, depending on your needs -->
+            <div class="sign-in" style="display: none;">
+                <p class="sign">Sign-In</p>
+                <form action="login.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button id="button1" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class='connect'>
+            <nav>
+                <p>CULTURE COFFEE</p>
+                <p class="addr">1029 NE 6th Oklahoma City, OK 73117</p>
+                <a class="addr" href="#">culturecoffeeokc@gmail.com</a>
+                <a class="addr" href="#">(405) 724-7243</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loginButton = document.getElementById('loginButton');
+        const userAvatar = document.getElementById('userAvatar');
+
+        loginButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent any default action
+
+            // Prompt user for email and password
+            const email = prompt('Please enter your email:');
+            if (email) { // Check if email was entered
+                const password = prompt('Please enter your password:');
+                if (password) { // Check if password was entered
+                    // Here you'd usually validate the email and password
+                    const initials = email.charAt(0).toUpperCase(); // Example for initials
+                    userAvatar.innerText = initials; // Display initials in userAvatar element
+                    userAvatar.style.display = 'block'; // Show userAvatar
+                    loginButton.style.display = 'none'; // Hide login button
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
